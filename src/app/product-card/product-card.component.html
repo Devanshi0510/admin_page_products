@@ -1,0 +1,10 @@
+
+<div class="card" ><a [routerLink]="['/product-detail', productData?.id]">
+    <img class="card-img-top" [src]="productData?.image"  height="10rem"  alt="Card image cap"></a>
+    <div class="card-body">
+      <h5 class="card-title">{{productData?.title | slice:0:15}}</h5>
+      <p class="prod_price">Price: $ {{productData?.price}}</p>
+      <button class="btn btn-primary" (click)="addToCart(productData)" >Add to Cart</button>
+    </div>
+  </div>
+ 

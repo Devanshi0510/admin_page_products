@@ -1,0 +1,14 @@
+<div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <img class="img-fluid" src="{{ current_prod_detail?.image }}">
+      </div>
+      <div class="col-md-6">
+        <h2>{{ current_prod_detail?.title }}</h2>
+        <h3>Price: ${{ current_prod_detail?.price }}</h3>
+        <button class="btn btn-primary"   (click)="addToCart(current_prod_detail)">Add to Cart</button>
+      </div>
+    </div>
+  </div>
+
+

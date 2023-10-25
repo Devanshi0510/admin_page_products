@@ -1,0 +1,17 @@
+<div class="container">
+    <form [formGroup]="create_prod" (submit)="CreateProduct()" novalidate>
+      <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Title</label>
+        <input type="text" class="form-control" formControlName="title" id="exampleFormControlInput1" placeholder="name of the product" required>
+      </div>
+      <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Image</label>
+        <input type="text" class="form-control" formControlName="image" id="exampleFormControlInput1" placeholder="image link of the product" required>
+      </div>
+      <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Price in $</label>
+        <input type="number" class="form-control" formControlName="price" id="exampleFormControlInput1" placeholder="price of the product" required>
+      </div>
+      <button type="submit" class="btn btn-primary mb-3">Submit</button>
+    </form>
+  </div>
